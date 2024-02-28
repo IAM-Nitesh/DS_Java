@@ -1,0 +1,26 @@
+Java array is an object which contains elements of a similar data type
+
+1.Array sizes doesn't grow i.e.
+
+2.we cannot add new values or delete values in an array.
+  However, we can update values in the array
+
+3.all arrays are dynamically allocated.
+
+4.An array can contain primitives (int, char, etc.) and
+object (or non-primitive) references of a class depending
+on the definition of the array.
+In the case of primitive data types, the actual values
+might be stored in contiguous memory locations
+(JVM does not guarantee this behavior).
+In the case of class objects, the actual objects are
+stored in a heap segment.
+
+5. we can’t specify the size of array as long but we can specify it as int or short.
+
+6. An Object is direct superclass of an array in Java.
+
+7. Every array type implements the interfaces Cloneable and java.io.Serializable.
+
+8. The size of the array cannot be altered(once initialized).
+   However, an array reference can be made to point to another array.

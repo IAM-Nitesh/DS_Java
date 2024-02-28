@@ -1,6 +1,6 @@
 package Arrays;
 
-public class Driver {
+public class StudentDriver {
 
     public static void main(String[] args) throws CloneNotSupportedException {
 

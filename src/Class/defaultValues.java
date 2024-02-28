@@ -1,6 +1,6 @@
-package Arrays;
+package Class;
 
-public class test {
+public class defaultValues {
     static int i; // default value = 0
     int j; // default value = 0
     // j = 2;
@@ -12,7 +12,7 @@ public class test {
 
     public static void main(String[] args) {
 
-        test t = new test();
+        defaultValues t = new defaultValues();
         t.puke(1,2);
 
     }

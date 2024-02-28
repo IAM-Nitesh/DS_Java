@@ -1,0 +1,45 @@
+1.The ArrayList class is a part of Collection framework, extends AbstractList class
+and implements the List interface.
+Dynamic Array of objects which can be declared without
+defining the size at the time of declaration.
+
+How ArrayList Works?
+When an ArrayList is created, its default capacity or size is 10 if not provided by the user.
+The size of the ArrayList grows based on load factor and current capacity.
+
+Threshold = (Load Factor) * (Current Capacity)
+For example, if the user creates an ArrayList of size 10,
+Threshold = Load Factor * Current Capacity
+          = 0.75 * 10
+          ≅ 7
+
+This means after adding the 7th element to the list, the size will increase as it has reached the threshold value.
+Internally, a new ArrayList with a new capacity is created and the elements present in the old ArrayList are copied
+in the new ArrayList.
+
+a.The backing data structure of ArrayList is an array.
+b.When the array becomes full and we want to add new elements, a new ArrayList with a new capacity is created.
+c.The elements present in the old ArrayList are copied in the new ArrayList, while deleting the old ArrayList.
+
+new_capacity = old_capacity + (old_capacity >> 1)
+The new capacity will be 10 + (10 >> 1) => 10 + 5 => 15. Hence, the size is increased from 10 to 15.
+
+2.Can not hold primitive data types.
+Hence, can be created only for objects like wrapper classes - Integer, String etc
+
+3. Removal from the end is quicker than from the start as
+there would be swapping of the elements involved.
+Hence, Always prefer removal from end for better performance.
+
+4. It implements List, RandomAccess, Cloneable and Serializable interfaces
+
+5. They are slower than built-in arrays, their resizable nature is advantageous
+ in programs requiring frequent array manipulations
+
+6. Not Synchronized: ArrayList in Java is not synchronized,
+we can use the Vector class for the synchronized version.
+It means ArrayList operations are not thread-safe and multiple threads should not operate on the same ArrayList object at the same time.
+
+
+visit for more info:
+https://www.scaler.com/topics/java/arraylist-in-java/

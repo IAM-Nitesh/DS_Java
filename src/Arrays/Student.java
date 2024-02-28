@@ -2,6 +2,9 @@ package Arrays;
 import java.util.*;
 
 public class Student implements Cloneable{
+    /*
+    Implemented cloneable at class level ie Object of Class student is being cloned
+    */
     String name;
     int id;
     int[] marks;
@@ -15,6 +18,7 @@ public class Student implements Cloneable{
 
     public Student clone() throws CloneNotSupportedException {
         return (Student)super.clone();
+        // override the clone method of Object class
     }
 
 
